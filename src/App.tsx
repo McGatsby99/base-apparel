@@ -7,11 +7,13 @@ import Hero from './components/Hero';
 import Content from './components/Content';
 import Form from './components/Form';
 
-function App() {
+
+const App: React.FC = () =>
+ {
   return (
-    <div className="App">
-      <header>
-        <img src={logo} alt="" />
+    <div className="App container">
+      <header className='logo m-1'>
+        <img src={logo} alt="" width={100}/>
       </header>
       <Hero />
       <Content />

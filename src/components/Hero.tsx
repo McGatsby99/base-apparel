@@ -3,10 +3,10 @@ import heroMobile from '../images/hero-mobile.jpg'
 import heroDesktop from '../images/hero-desktop.jpg'
 
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
-    <div>
-        <picture>
+    <div className='hero'>
+        <picture >
             <source media="(min-width:380px)" srcSet={heroDesktop}/>
             <img srcSet={heroMobile} alt="" />
         </picture>
