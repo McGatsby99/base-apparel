@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import logo from './images/logo.svg'
 
@@ -10,6 +10,10 @@ import Form from './components/Form';
 
 const App: React.FC = () =>
  {
+
+  const [email, setEmail] = useState<string>('')
+
+
   return (
     <div className="App container">
       <header className='logo m-1'>
@@ -17,7 +21,7 @@ const App: React.FC = () =>
       </header>
       <Hero />
       <Content />
-      <Form/>
+      <Form email={email} setEmail={setEmail} />
     </div>
   );
 }
