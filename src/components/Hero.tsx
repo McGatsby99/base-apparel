@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   return (
     <div className='hero'>
         <picture >
-            <source className='responsive' media="(min-width:380px)" srcSet={heroDesktop}/>
+            <source className='responsive' media="(min-width:375px)" srcSet={heroDesktop}/>
             <img className='responsive' srcSet={heroMobile} alt="" />
         </picture>
     </div>
