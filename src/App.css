@@ -65,11 +65,8 @@ header{
 
 h1{
     font-size: 3.2rem;
-    /* margin: 1.5rem; */
     font-weight: 600;
     margin-top: 4rem;
-    /* width: 300px; */
-    /* border: 1px solid red; */
     text-transform: uppercase;
 }
 
@@ -80,15 +77,12 @@ span{
 
 p{
     font-weight: 400;
-    /* width: 300px; */
     margin-top: 1.5rem;
     color: var(--Desaturated-Red);
     line-height: 1.5;
-    /* border: 1px solid green; */
 }
 
 .inputForm{
-    /* border: 2px solid red; */
     padding: 0 20px;
     position: relative;
     width: 300px;
@@ -116,16 +110,12 @@ input{
 }
 
 button{
-    /* display: none; */
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
     width: 5rem;
     height: 3rem;
     border-radius: 40px;
-    /* border: 0.2px solid var(--Desaturated-Red); */
     position: relative;
-    /* bottom: 0px;
-    right: 18px; */
     bottom: 87px;
     left: 120px;
     cursor: pointer;
@@ -188,10 +178,8 @@ button:hover{
 @media(min-width:375px) {
     .hero{
         width: 100%;
-        /* object-fit: contain; */
         height: 400px;
         overflow: hidden;
-        /* border: 4px solid red; */
     }
 
     .btn-error{
@@ -214,32 +202,25 @@ button:hover{
     .responsive {
         width: 100%;
         max-width: 600px;
-        /* height: 800px; */
-        /* object-fit: fill; */
       }
 
     .logo { 
-        /* grid-area: header;  */
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        /* max-width: 500px; */
         height: 50px;
         width: 300px;
-        /* margin-left: 30%; */
         justify-self:flex-start;
         margin-top: 2.5rem;
         margin-bottom: 0;
 
     }
     .hero { 
-        /* grid-area: hero;  */
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
-        /* max-width: 500px; */
         justify-self: center;
         align-self: self-start;
         height: 100%;
@@ -247,16 +228,13 @@ button:hover{
 
     }
     .content { 
-        /* grid-area: article;  */
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        /* max-width: 500px; */
         height:300px;
         justify-self: flex-start;
         align-self: flex-end;
-        /* margin: 0; */
     }
 
     h1{
@@ -264,12 +242,10 @@ button:hover{
     }
 
     .inputForm { 
-        /* grid-area: form;*/
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;  
-        /* max-width: 500px; */
         justify-self: flex-start;
         align-self: flex-start;
         padding: 0;
@@ -301,16 +277,9 @@ button:hover{
     }
 
     .container{
-        /* width: 100%; */
         display: grid;
-        /* grid-template-areas:
-        header hero
-        article hero
-        form hero; */
         justify-content: center;
-        /* grid-template-columns: 1fr minmax(100px, 600px); */
         grid-template-columns: 1fr 1fr;
-
         grid-template-rows: 70px 400px auto;
        
     }
